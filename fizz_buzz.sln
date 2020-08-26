@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fizz_buzz", "fizz_buzz\fizz_buzz.csproj", "{D02D4E12-274A-4577-BC5A-E2065C8764DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fizz_buzz_lib", "fizz_buzz_lib\fizz_buzz_lib.csproj", "{1057C7A8-DDF6-4D21-80BB-66E29D1CF760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fizz_buzz_tests", "fizz_buzz_tests\fizz_buzz_tests.csproj", "{4C64F786-6A68-49C7-9A44-C1E21D27B98B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D02D4E12-274A-4577-BC5A-E2065C8764DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02D4E12-274A-4577-BC5A-E2065C8764DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02D4E12-274A-4577-BC5A-E2065C8764DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02D4E12-274A-4577-BC5A-E2065C8764DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1057C7A8-DDF6-4D21-80BB-66E29D1CF760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1057C7A8-DDF6-4D21-80BB-66E29D1CF760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1057C7A8-DDF6-4D21-80BB-66E29D1CF760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1057C7A8-DDF6-4D21-80BB-66E29D1CF760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C64F786-6A68-49C7-9A44-C1E21D27B98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C64F786-6A68-49C7-9A44-C1E21D27B98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C64F786-6A68-49C7-9A44-C1E21D27B98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C64F786-6A68-49C7-9A44-C1E21D27B98B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
