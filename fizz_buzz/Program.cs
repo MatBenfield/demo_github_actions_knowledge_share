@@ -1,5 +1,4 @@
 ﻿using System;
-using Serilog;
 
 namespace fizz_buzz
 {
@@ -7,14 +6,11 @@ namespace fizz_buzz
     {
         static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration().CreateLogger();
-            Log.Information("Fizz Buzz test!");
+            Console.WriteLine("Fizz Buzz test!");
             var fbl = new fizz_buzz_lib.fizzbuzzer(); 
             for (int i = 1; i <= 100; i++)
             {
-                string output = fbl.Calculator(i, 3, 5);
-                Console.WriteLine(output);
-                Log.Information(output);
+                Console.WriteLine(fbl.Calculator(i, 3, 5));
             }
             Console.Read();
         }
