@@ -1,4 +1,5 @@
 ﻿using System;
+using fizz_buzz_lib;
 
 namespace fizz_buzz
 {
@@ -7,7 +8,7 @@ namespace fizz_buzz
         static void Main(string[] args)
         {
             Console.WriteLine("Fizz Buzz test!");
-            var fbl = new fizz_buzz_lib.fizzbuzzer(); 
+            var fbl = new fizzbuzzer(); 
             for (int i = 1; i <= 100; i++)
             {
                 Console.WriteLine(fbl.Calculator(i, 3, 5));

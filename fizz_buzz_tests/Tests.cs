@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System;
+using fizz_buzz_lib;
 
 namespace fizz_buzz_tests
 {
@@ -10,7 +11,7 @@ namespace fizz_buzz_tests
         [TestCase(0)]
         public void GivenImpossibleValuesCalculatorReturnsValue(int value)
         {
-            var fbl = new fizz_buzz_lib.fizzbuzzer();
+            var fbl = new fizzbuzzer();
             Assert.Throws<ArgumentOutOfRangeException>(()=> fbl.Calculator(value, 3, 5));
         }
 
@@ -20,7 +21,7 @@ namespace fizz_buzz_tests
         [TestCase(9)]
         public void GivenValuesCalculatorReturnsFizz(int value)
         {
-            var fbl = new fizz_buzz_lib.fizzbuzzer();
+            var fbl = new fizzbuzzer();
             var output = fbl.Calculator(value, 3, 5);
 
             Assert.AreEqual(output, $"{value} Fizz");
@@ -31,7 +32,7 @@ namespace fizz_buzz_tests
         [TestCase(20)]
         public void GivenValuesCalculatorReturnsBuzz(int value)
         {
-            var fbl = new fizz_buzz_lib.fizzbuzzer();
+            var fbl = new fizzbuzzer();
             var output = fbl.Calculator(value, 3, 5);
 
             Assert.AreEqual(output, $"{value} Buzz");
@@ -42,7 +43,7 @@ namespace fizz_buzz_tests
         [TestCase(45)]
         public void GivenValuesCalculatorReturnsFizzBuzz(int value)
         {
-            var fbl = new fizz_buzz_lib.fizzbuzzer();
+            var fbl = new fizzbuzzer();
             var output = fbl.Calculator(value, 3, 5);
 
             Assert.AreEqual(output, $"{value} FizzBuzz");
@@ -53,21 +54,11 @@ namespace fizz_buzz_tests
         [TestCase(4)]
         public void GivenValuesCalculatorReturnsInteger(int value)
         {
-            var fbl = new fizz_buzz_lib.fizzbuzzer();
+            var fbl = new fizzbuzzer();
             var output = fbl.Calculator(value, 3, 5);
 
             Assert.AreEqual(output, $"{value}");
         }
 
-        [TestCase(3)]
-        [TestCase(6)]
-        [TestCase(9)]
-        public void GivenValuesCalculatorReturnsFizzAndNotBuzz(int value)
-        {
-            var fbl = new fizz_buzz_lib.fizzbuzzer();
-            var output = fbl.Calculator(value, 3, 5);
-
-            Assert.AreNotEqual(output, $"{value} Buzz");
-        }
     }
 }
