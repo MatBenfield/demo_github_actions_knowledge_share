@@ -9,7 +9,7 @@ namespace fizz_buzz_tests
         [TestCase(-1)]
         [TestCase(-3)]
         [TestCase(0)]
-        public void GivenImpossibleValuesCalculatorReturnsValue(int value)
+        public void GivenImpossibleValuesCalculatorReturnsThrowsException(int value)
         {
             var fbl = new fizzbuzzer();
             Assert.Throws<ArgumentOutOfRangeException>(()=> fbl.Calculator(value, 3, 5));
