@@ -6,7 +6,7 @@ namespace fizz_buzz_lib
     {
         public string Calculator(int i, int f, int b)
         {
-            if (i < 1) 
+            if (i < 1)
             {
                 throw new ArgumentOutOfRangeException("values cannot be less than 1");
             }
